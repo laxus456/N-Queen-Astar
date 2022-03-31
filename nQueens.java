@@ -13,7 +13,6 @@ public final class nQueens {
         int seed = 0;
         while(seed==0){
             seed = ra.nextInt(10);
-            System.out.print(seed)
         }
         Random rand = new Random(seed);
         int[] board = new int[n]; //Array to represent seeded board
