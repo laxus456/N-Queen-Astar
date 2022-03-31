@@ -3,7 +3,7 @@
 
 Java implementation of a program which solves the N Queens problem using  A* search Algorithm with the number of conflicting queen pairs as the heuristic.
 
-The input for the prgram should consist of a single number, indicating the size of the board (for example, 8 means a standard 8 by 8 chessboard with 8 superqueens). The output will draw an optimal positioning of the superqueens on the board, and it should state the number of pairs of superqueens that attack each other
+The input for the program should consist of a single number, indicating the size of the board (for example, 8 means a standard 8 by 8 chessboard with 8 superqueens). The output will draw an optimal positioning of the superqueens on the board, and it should state the number of pairs of superqueens that attack each other.
 
 ## Running the N-Queens Program
 
