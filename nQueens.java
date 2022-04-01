@@ -26,7 +26,8 @@ public final class nQueens {
         // board[2] = 3;
         // board[3] = 4;
         // number of conflicts: 4
-
+        
+       
         // Output for n=6
         // board[0] = 2;
         // board[1] = 5;
@@ -45,10 +46,8 @@ public final class nQueens {
         initial.printBoard();
 
         //apply Astar to initial board
-        AStar.performSearch(initial);
+        AStar.performSearch(initial, n);
 
-        //check conflicts
-        AStar.checkH(initial, n);
     }
 
     /**

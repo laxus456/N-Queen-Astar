@@ -7,7 +7,7 @@ class AStar {
      * problem.
      * @param b Board to perform the search on.
      */
-    public static void performSearch(Board initial) {
+    public static void performSearch(Board initial, int n) {
         //Init variables
         int bestHV = Integer.MAX_VALUE, bestIndex = -1;
         Board bestChild;
@@ -26,6 +26,7 @@ class AStar {
                 System.out.println("Solution found. ");
                 System.out.println("=====================");
                 bestChild.printBoard();
+                checkH(bestChild, n);
                 return;
             }
             //Finished Evaluation

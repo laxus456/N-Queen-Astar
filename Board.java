@@ -84,11 +84,18 @@ public class Board implements Comparable<Board> {
     * @return conflicts The number of conflicts that the given queen has.
      */
     public int checkConflicts(int c) {
+        
         int conflicts = 0; //Number of conflicts that queen c has
+
         for (int i = 0; i < n; i++) {
-            if (i != c) { //skip current queen placement
+            if (i != c) { //Don't check the current queen's column
                 //If two queens have the same row
                 if (boardState[i] == boardState[c] && boardState[c] != 0) {
+                    conflicts++; //There is a conflict
+                }
+                //If two queens are along the same diagonal
+                if (Math.abs(boardState[i] - boardState[c]) == Math.abs(i - c)
+                        && boardState[c] != 0 && boardState[i] != 0) {
                     conflicts++; //There is a conflict
                 }
             }
